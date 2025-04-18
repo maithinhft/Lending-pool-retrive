@@ -181,9 +181,7 @@ const main = async () => {
         loop: {
 
         },
-        arbitrage: {
-
-        }
+        arbitrage: []
     }
 
     for (let token1 of Object.keys(compoundV2Tokens))
@@ -294,18 +292,24 @@ const main = async () => {
                                         }   
                                     },
                                     [symbol2]: {
-                                        [market1]: [
-                                                                
-                                        ]
+                                        [market1]: {
+                                            BorrowAPR: APR_B_Y_1,
+
+                                        },
+                                        [market2]: {
+                                            DepositAPR: APR_D_Y_2,
+                                            LTV: LTV_Y_2,
+                                        }
                                     }
                                 }
                             }
+                            result.arbitrage.push(data);
                         }
                         await sleep(100);
                     }
         }
     console.log("Done arbitrage!");
-    await writeFileSync("data.json", JSON.stringify(result, null, 2));
+    writeFileSync("data.json", JSON.stringify(result, null, 2));
 }
 
 main();
