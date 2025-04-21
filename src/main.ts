@@ -14,6 +14,7 @@ const main = async () => {
     // await siloV1.getRewardAPR("0x26Dd60f1B3B6c784e1e2bd767D1F31ABFEb2f04E");
     // await siloV1.getInterestAPR("0x7e38a9d2c99caef533e5d692ed8a2ce4b478e585", "0x6C2C06790b3E3E3c38e12Ee22F8183b37a13EE55");
     // await siloV1.thresholdAndLTV();
+    // await siloV1.liquidity("0xc0ab69fffeb5375235d8caa4f7218097bbcc0a0a", "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8");
 
     // const compoundV2 = new CompoundV2("USDT");
     // console.log(`Compound v2 supply apr: ${await compoundV2.getSupplyAPR()}, borrow apr: ${await compoundV2.getBorrowAPR()}`);
@@ -193,7 +194,7 @@ const main = async () => {
             const APR_B_Y = Number(await token2CompoundV2.getBorrowAPR());
             const LTV_X = Number(await token1CompoundV2.thresholdAndLTV());
 
-            if (APR_D_X > APR_B_Y && LTV_X > 0) {
+            if (APR_B_Y > 0 && APR_D_X > 0 && APR_D_X > APR_B_Y && LTV_X > 0) {
                 console.log(`COMPOUNDv2 --> Supply token: ${token1} and deposit token: ${token2}`);
                 let data: any = {
                     pairToken: [token1, token2],
@@ -228,7 +229,7 @@ const main = async () => {
                 const LTV_X = Number(await siloV1.getLTV(poolAddress, asset2));
                 const symbol1 = await token.getSymbol(asset1);
                 const symbol2 = await token.getSymbol(asset2);
-                if (APR_D_X > APR_B_Y && LTV_X > 0) {
+                if (APR_D_X > 0 && APR_B_Y > 0 && APR_D_X > APR_B_Y && LTV_X > 0) {
                     console.log(`SILOv1 --> Market: ${poolAddress}, Supply token: ${symbol1} and deposit token: ${symbol2}`);
 
                     let data: any = {
@@ -276,27 +277,29 @@ const main = async () => {
                         const symbol1 = await token.getSymbol(asset1);
                         const symbol2 = await token.getSymbol(asset2);
 
-                        if (-LTV_X_1 * APR_B_Y_1 + LTV_X_1 * APR_D_Y_2 - LTV_X_1 * LTV_Y_2 * APR_B_X_2 + LTV_X_1 * LTV_Y_2 * APR_D_X_1 > 0) {
+                        if (APR_D_X_1 > 0 && APR_B_X_2 > 0 && APR_B_Y_1 > 0 && APR_D_Y_2 > 0 && 
+                            -LTV_X_1 * APR_B_Y_1 + LTV_X_1 * APR_D_Y_2 - LTV_X_1 * LTV_Y_2 * APR_B_X_2 + LTV_X_1 * LTV_Y_2 * APR_D_X_1 > 0
+                        ) {
                             console.log(`Arbitrage market Silo v1 --> Market1: ${poolAddress1}, token 1: ${symbol1}, market2: ${poolAddress2}, token2: ${symbol2}`);
                             let data: any = {
-                                pairProtocol: [`SILOv1.${market1}`, `SILOv1.${market2}`],
+                                pairProtocol: [`SILOv1.${poolAddress1}`, `SILOv1.${poolAddress2}`],
                                 pairToken: [symbol1,symbol2],
                                 apr: {
                                     [symbol1]: {
-                                        [market1]: {
+                                        [poolAddress1]: {
                                             DepositAPR: APR_D_X_1,
                                             LTV: LTV_X_1,
                                         },
-                                        [market2]: {
+                                        [poolAddress2]: {
                                             BorrowAPR: APR_B_X_2,
                                         }   
                                     },
                                     [symbol2]: {
-                                        [market1]: {
+                                        [poolAddress1]: {
                                             BorrowAPR: APR_B_Y_1,
 
                                         },
-                                        [market2]: {
+                                        [poolAddress2]: {
                                             DepositAPR: APR_D_Y_2,
                                             LTV: LTV_Y_2,
                                         }

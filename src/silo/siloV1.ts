@@ -11,7 +11,8 @@ const ABI = [
     "function protocolFees(address _silo, address _asset) external view returns (uint256)",
     "function getLiquidationThreshold(address _silo, address _asset) external view override returns (uint256)",
     "function getMaximumLTV(address _silo, address _asset) external view override returns (uint256)",
-    "function symbol() public view returns(string)"
+    "function symbol() public view returns(string)",
+    "function totalDeposits(address _silo, address _asset) external view returns (uint256)",
 ]
 
 const siloLensAddress = '0xBDb843c7a7e48Dc543424474d7Aa63b61B5D9536';
@@ -96,6 +97,11 @@ export class SiloV1 {
         const siloRespositoryContract = new ethers.Contract(siloRespositoryAddress, ABI, this.provider);
         console.log("LTV: " + BigNumber(await siloRespositoryContract.getMaximumLTV("0x7bec832FF8060cD396645Ccd51E9E9B0E5d8c6e4", "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1")).div(10 ** 18)); // (market, token)
         console.log("Threshold: " + BigNumber(await siloRespositoryContract.getLiquidationThreshold("0x7bec832FF8060cD396645Ccd51E9E9B0E5d8c6e4", "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1")).div(10 ** 18));
+    }
+
+    public async liquidity(marketAddress: string, tokenAddress: string) {
+        const siloLensContract = new ethers.Contract(siloLensAddress, ABI, this.provider);
+        console.log(await siloLensContract.totalDeposits(marketAddress, tokenAddress));
     }
 }
 

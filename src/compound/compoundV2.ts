@@ -71,33 +71,6 @@ export class CompoundV2 {
         // return borrowApr;
     }
 
-    public async rewardAPR() {
-        const compPrice = await getPrice('compound');
-        const ethPrice = await getPrice('eth');
-        // COMP reward = baseTrackingSupplySpeed * Second_per_year / baseIndexScale
-        const cTokenV2Contract = new ethers.Contract(this.token_address, COMP_ABI, this.provider);
-
-        let decimals = 10 ** 6;
-        if (this.token_address == '0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5') decimals = decimals * 10 ** 12 / ethPrice; //1 ETH
-
-        const baseTrackingSupplySpeed = await cTokenV2Contract.baseTrackingSupplySpeed();
-        const trackingIndexScale = await cTokenV2Contract.trackingIndexScale();
-        const totalSupply = await cTokenV2Contract.totalSupply();
-        const CompSupplyApr = BigNumber(baseTrackingSupplySpeed)
-            .multipliedBy(365 * 24 * 60 * 60).div(trackingIndexScale)
-            .multipliedBy(decimals).div(totalSupply)
-            .multipliedBy(compPrice); //COMP price
-        console.log('Supply reward apr: ' + CompSupplyApr.toString());
-
-        const baseTrackingBorrowSpeed = await cTokenV2Contract.baseTrackingBorrowSpeed();
-        const totalBorrow = await cTokenV2Contract.totalBorrow();
-        const CompborrowApr = BigNumber(baseTrackingBorrowSpeed)
-            .multipliedBy(365 * 24 * 60 * 60).div(trackingIndexScale)
-            .multipliedBy(decimals).div(totalBorrow)
-            .multipliedBy(compPrice); //COMP price
-        console.log('Borrow reward apr: ' + CompborrowApr.toString());
-    }
-
     public async thresholdAndLTV() {
         const controllerContract = new ethers.Contract(CONTROLLER_ADDRESS, COMP_ABI, this.provider);
 
