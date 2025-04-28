@@ -105,6 +105,31 @@ export class SiloV1 {
     }
 }
 
+export class wrapSiloV1 {
+    private marketAddress: string = "";
+    private tokenAddress: string = "";
+    private silo = new SiloV1();
+    private chain = "";
+    constructor(marketAddress: string, tokenAddress: string, chain: string) {
+        this.marketAddress = marketAddress;
+        this.tokenAddress = tokenAddress;
+        this.chain;
+        this.silo = new SiloV1(chain);
+    }
+
+    public async getSupplyAPR() {
+        return this.silo.getSupplyAPR(this.marketAddress, this.tokenAddress);
+    }
+
+    public async getBorrowAPR() {
+        return this.silo.getBorrowAPR(this.marketAddress, this.tokenAddress);
+    }
+
+    public async getLtv() {
+        return this.silo.getLTV(this.marketAddress, this.tokenAddress);
+    }
+}
+
 export class Token {
     private provider = new ethers.JsonRpcProvider(RPC.ARBITRUM);
     constructor(chain = 'ARBITRUM') {

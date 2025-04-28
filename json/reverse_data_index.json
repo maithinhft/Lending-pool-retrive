@@ -1,0 +1,33 @@
+{
+    "aavev3": {
+        "configuration": 0,
+        "liquidityIndex": 1,
+        "currentLiquidityRate": 2,
+        "variableBorrowIndex": 3,
+        "currentVariableBorrowRate": 4,
+        "currentStableBorrowRate": 5,
+        "lastUpdateTimestamp": 6,
+        "id": 7,
+        "aTokenAddress": 8,
+        "stableDebtTokenAddress": 9,
+        "variableDebtTokenAddress": 10,
+        "interestRateStrategyAddress": 11,
+        "accruedToTreasury": 12,
+        "unbacked": 13,
+        "isolationModeTotalDebt": 14
+    },
+    "radiant": {
+        "configuration": 0,
+        "liquidityIndex": 1,
+        "variableBorrowIndex": 2,
+        "currentLiquidityRate": 3,
+        "currentVariableBorrowRate": 4,
+        "currentStableBorrowRate": 5,
+        "lastUpdateTimestamp": 6,
+        "aTokenAddress": 7,
+        "stableDebtTokenAddress": 8,
+        "variableDebtTokenAddress": 9,
+        "interestRateStrategyAddress": 10,
+        "id": 11
+    }
+}

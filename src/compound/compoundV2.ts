@@ -1,9 +1,8 @@
 import { ethers } from "ethers";
-import { getPrice, sleep } from "../services/util";
 import BigNumber from "bignumber.js";
-import { RPC } from "../config/constants";
+import { SECOND_PER_BLOCK, RPC } from "../config/constants";
 
-const COMP_ADDRESS: any = {
+const COMP_TOKEN_ADDRESS: any = {
     cAAVE: "0xe65cdB6479BaC1e22340E4E755fAE7E509EcD06c",
     cBAT: "0x6C8c6b02E7b2BE14d4fA6022Dfd6d75921D90E4E",
     cCOMP: "0x70e36f6BF80a52b3B46b3aF8e106CC0ed743E8e4",
@@ -38,34 +37,36 @@ const COMP_ABI = [
 ]
 
 export class CompoundV2 {
-    private token_address = COMP_ADDRESS.cDAI;
+    private tokenAddress = COMP_TOKEN_ADDRESS.cDAI;
     private provider = new ethers.JsonRpcProvider(RPC['ETHEREUM']);
+    private chain = "";
     constructor(token = "USDC", chain = 'ETHEREUM') {
-        this.token_address = COMP_ADDRESS[token];
+        this.tokenAddress = COMP_TOKEN_ADDRESS[token];
+        this.chain = chain;
 
         if (!RPC[chain]) throw `No support ${chain}`; else
             this.provider = new ethers.JsonRpcProvider(RPC[chain]);
     }
     public async getSupplyAPR() {
-        const cTokenV2Contract = new ethers.Contract(this.token_address, COMP_ABI, this.provider);
+        const cTokenV2Contract = new ethers.Contract(this.tokenAddress, COMP_ABI, this.provider);
 
         const ethMantissa = 1e18;
-        const blocksPerDay = 7200; // 12 seconds per block
+        const blocksPerDay = 24 * 60 * 60 * 1/ SECOND_PER_BLOCK[this.chain]; 
         const daysPerYear = 365;
         const supplyRatePerBlock = await cTokenV2Contract.supplyRatePerBlock();
-        const supplyApy = BigNumber(supplyRatePerBlock).div(ethMantissa).multipliedBy(blocksPerDay).plus(1).pow(daysPerYear).minus(1).multipliedBy(100).toFixed(2);
+        const supplyApy = BigNumber(supplyRatePerBlock).div(ethMantissa).multipliedBy(blocksPerDay).plus(1).pow(daysPerYear).minus(1).toFixed(2);
         return supplyApy;
         // const supplyApr = BigNumber(supplyRatePerBlock).div(ethMantissa).multipliedBy(blocksPerDay * daysPerYear).multipliedBy(100).toFixed(4);
         // return supplyApr;
     }
     public async getBorrowAPR() {
-        const cTokenV2Contract = new ethers.Contract(this.token_address, COMP_ABI, this.provider);
+        const cTokenV2Contract = new ethers.Contract(this.tokenAddress, COMP_ABI, this.provider);
 
         const ethMantissa = 1e18;
-        const blocksPerDay = 7200; // 12 seconds per block
+        const blocksPerDay = 24 * 60 * 60 * 1/ SECOND_PER_BLOCK[this.chain]; 
         const daysPerYear = 365;
         const borrowRatePerBlock = await cTokenV2Contract.borrowRatePerBlock();
-        const borrowApy = BigNumber(borrowRatePerBlock).div(ethMantissa).multipliedBy(blocksPerDay).plus(1).pow(daysPerYear).minus(1).multipliedBy(100).toFixed(2);
+        const borrowApy = BigNumber(borrowRatePerBlock).div(ethMantissa).multipliedBy(blocksPerDay).plus(1).pow(daysPerYear).minus(1).toFixed(2);
         return borrowApy;
         // const borrowApr = BigNumber(borrowRatePerBlock).div(ethMantissa).multipliedBy(blocksPerDay * daysPerYear).multipliedBy(100).toFixed(4);
         // return borrowApr;
@@ -74,7 +75,7 @@ export class CompoundV2 {
     public async thresholdAndLTV() {
         const controllerContract = new ethers.Contract(CONTROLLER_ADDRESS, COMP_ABI, this.provider);
 
-        const collateralFactorInfos = await controllerContract.markets(this.token_address);
+        const collateralFactorInfos = await controllerContract.markets(this.tokenAddress);
         if (collateralFactorInfos && collateralFactorInfos.length && collateralFactorInfos.length >= 3) {
             const ltv = BigNumber(collateralFactorInfos[1]).div(10 ** 18).toFixed(2).toString();
             return ltv;

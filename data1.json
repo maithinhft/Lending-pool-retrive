@@ -1,0 +1,1893 @@
+{
+  "loop": {},
+  "arbitrage": [
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "aavev3",
+        "venus"
+      ],
+      "pairToken": [
+        "ETH",
+        "BTCB"
+      ],
+      "estimate_apr": 0.3423625949444589,
+      "apr": {
+        "ETH": {
+          "aavev3": {
+            "DepositAPR": 0.8073693073601192,
+            "LTV": 0.8
+          },
+          "venus": {
+            "BorrowAPR": 0.0211
+          }
+        },
+        "BTCB": {
+          "aavev3": {
+            "BorrowAPR": 0.20136220220752185
+          },
+          "venus": {
+            "DepositAPR": 0.0003,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "aavev3",
+        "venus"
+      ],
+      "pairToken": [
+        "USDC",
+        "WBNB"
+      ],
+      "estimate_apr": 0.2018800008397479,
+      "apr": {
+        "USDC": {
+          "aavev3": {
+            "DepositAPR": 2.7804151291749846,
+            "LTV": 0.75
+          },
+          "venus": {
+            "BorrowAPR": 0.0664
+          }
+        },
+        "WBNB": {
+          "aavev3": {
+            "BorrowAPR": 1.8496584663034903
+          },
+          "venus": {
+            "DepositAPR": 0.0019,
+            "LTV": 0.78
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "aavev3",
+        "venus"
+      ],
+      "pairToken": [
+        "USDC",
+        "BTCB"
+      ],
+      "estimate_apr": 1.4776601048177063,
+      "apr": {
+        "USDC": {
+          "aavev3": {
+            "DepositAPR": 2.7804945941222456,
+            "LTV": 0.75
+          },
+          "venus": {
+            "BorrowAPR": 0.0664
+          }
+        },
+        "BTCB": {
+          "aavev3": {
+            "BorrowAPR": 0.20136220220752185
+          },
+          "venus": {
+            "DepositAPR": 0.0003,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "aavev3",
+        "venus"
+      ],
+      "pairToken": [
+        "USDC",
+        "ETH"
+      ],
+      "estimate_apr": 0.29439009464020494,
+      "apr": {
+        "USDC": {
+          "aavev3": {
+            "DepositAPR": 2.7804945941222456,
+            "LTV": 0.75
+          },
+          "venus": {
+            "BorrowAPR": 0.0664
+          }
+        },
+        "ETH": {
+          "aavev3": {
+            "BorrowAPR": 1.790455549110857
+          },
+          "venus": {
+            "DepositAPR": 0.0117,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "aavev3",
+        "venus"
+      ],
+      "pairToken": [
+        "USDT",
+        "WBNB"
+      ],
+      "estimate_apr": 0.17513210813535074,
+      "apr": {
+        "USDT": {
+          "aavev3": {
+            "DepositAPR": 2.759292235663194,
+            "LTV": 0.75
+          },
+          "venus": {
+            "BorrowAPR": 0.091
+          }
+        },
+        "WBNB": {
+          "aavev3": {
+            "BorrowAPR": 1.8496584663034903
+          },
+          "venus": {
+            "DepositAPR": 0.0019,
+            "LTV": 0.78
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "aavev3",
+        "venus"
+      ],
+      "pairToken": [
+        "USDT",
+        "BTCB"
+      ],
+      "estimate_apr": 1.4501786897422755,
+      "apr": {
+        "USDT": {
+          "aavev3": {
+            "DepositAPR": 2.759292235663194,
+            "LTV": 0.75
+          },
+          "venus": {
+            "BorrowAPR": 0.091
+          }
+        },
+        "BTCB": {
+          "aavev3": {
+            "BorrowAPR": 0.20136220220752185
+          },
+          "venus": {
+            "DepositAPR": 0.0003,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "aavev3",
+        "venus"
+      ],
+      "pairToken": [
+        "USDT",
+        "ETH"
+      ],
+      "estimate_apr": 0.26690867956477415,
+      "apr": {
+        "USDT": {
+          "aavev3": {
+            "DepositAPR": 2.759292235663194,
+            "LTV": 0.75
+          },
+          "venus": {
+            "BorrowAPR": 0.091
+          }
+        },
+        "ETH": {
+          "aavev3": {
+            "BorrowAPR": 1.790455549110857
+          },
+          "venus": {
+            "DepositAPR": 0.0117,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "aavev3",
+        "venus"
+      ],
+      "pairToken": [
+        "FDUSD",
+        "BTCB"
+      ],
+      "estimate_apr": 1.1584961224763666,
+      "apr": {
+        "FDUSD": {
+          "aavev3": {
+            "DepositAPR": 2.3720708286100574,
+            "LTV": 0.7
+          },
+          "venus": {
+            "BorrowAPR": 0.052
+          }
+        },
+        "BTCB": {
+          "aavev3": {
+            "BorrowAPR": 0.20136220220752185
+          },
+          "venus": {
+            "DepositAPR": 0.0003,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "aavev3",
+        "venus"
+      ],
+      "pairToken": [
+        "FDUSD",
+        "ETH"
+      ],
+      "estimate_apr": 0.0541107796440321,
+      "apr": {
+        "FDUSD": {
+          "aavev3": {
+            "DepositAPR": 2.3720708286100574,
+            "LTV": 0.7
+          },
+          "venus": {
+            "BorrowAPR": 0.052
+          }
+        },
+        "ETH": {
+          "aavev3": {
+            "BorrowAPR": 1.790455549110857
+          },
+          "venus": {
+            "DepositAPR": 0.0117,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "aavev3",
+        "radiant"
+      ],
+      "pairToken": [
+        "ETH",
+        "USDC"
+      ],
+      "estimate_apr": 0.16049641756969146,
+      "apr": {
+        "ETH": {
+          "aavev3": {
+            "DepositAPR": 0.8073693073601192,
+            "LTV": 0.8
+          },
+          "radiant": {
+            "BorrowAPR": 9.15416472768064
+          }
+        },
+        "USDC": {
+          "aavev3": {
+            "BorrowAPR": 4.538528417458867
+          },
+          "radiant": {
+            "DepositAPR": 11.4165852756774,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "WBNB",
+        "FDUSD"
+      ],
+      "estimate_apr": 0.8004223910632653,
+      "apr": {
+        "WBNB": {
+          "venus": {
+            "DepositAPR": 0.0019,
+            "LTV": 0.78
+          },
+          "aavev3": {
+            "BorrowAPR": 1.8503118228069226
+          }
+        },
+        "FDUSD": {
+          "venus": {
+            "BorrowAPR": 0.052
+          },
+          "aavev3": {
+            "DepositAPR": 2.3720708286100574,
+            "LTV": 0.7
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "WBNB",
+        "USDC"
+      ],
+      "estimate_apr": 1.0358817673719367,
+      "apr": {
+        "WBNB": {
+          "venus": {
+            "DepositAPR": 0.0019,
+            "LTV": 0.78
+          },
+          "aavev3": {
+            "BorrowAPR": 1.8503118228069226
+          }
+        },
+        "USDC": {
+          "venus": {
+            "BorrowAPR": 0.0664
+          },
+          "aavev3": {
+            "DepositAPR": 2.7807624150179313,
+            "LTV": 0.75
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "WBNB",
+        "USDT"
+      ],
+      "estimate_apr": 0.9995315829918757,
+      "apr": {
+        "WBNB": {
+          "venus": {
+            "DepositAPR": 0.0019,
+            "LTV": 0.78
+          },
+          "aavev3": {
+            "BorrowAPR": 1.8503118228069226
+          }
+        },
+        "USDT": {
+          "venus": {
+            "BorrowAPR": 0.0911
+          },
+          "aavev3": {
+            "DepositAPR": 2.7588596145306736,
+            "LTV": 0.75
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "BTCB",
+        "WBNB"
+      ],
+      "estimate_apr": 0.021464064360470436,
+      "apr": {
+        "BTCB": {
+          "venus": {
+            "DepositAPR": 0.0003,
+            "LTV": 0.8
+          },
+          "aavev3": {
+            "BorrowAPR": 0.20136220220752185
+          }
+        },
+        "WBNB": {
+          "venus": {
+            "BorrowAPR": 0.0085
+          },
+          "aavev3": {
+            "DepositAPR": 0.17607362199585333,
+            "LTV": 0.7
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "BTCB",
+        "ETH"
+      ],
+      "estimate_apr": 0.5003356364752813,
+      "apr": {
+        "BTCB": {
+          "venus": {
+            "DepositAPR": 0.0003,
+            "LTV": 0.8
+          },
+          "aavev3": {
+            "BorrowAPR": 0.20136220220752185
+          }
+        },
+        "ETH": {
+          "venus": {
+            "BorrowAPR": 0.0211
+          },
+          "aavev3": {
+            "DepositAPR": 0.8073693073601192,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "BTCB",
+        "FDUSD"
+      ],
+      "estimate_apr": 1.7434618296518336,
+      "apr": {
+        "BTCB": {
+          "venus": {
+            "DepositAPR": 0.0003,
+            "LTV": 0.8
+          },
+          "aavev3": {
+            "BorrowAPR": 0.20136220220752185
+          }
+        },
+        "FDUSD": {
+          "venus": {
+            "BorrowAPR": 0.052
+          },
+          "aavev3": {
+            "DepositAPR": 2.3720708286100574,
+            "LTV": 0.7
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "BTCB",
+        "USDC"
+      ],
+      "estimate_apr": 2.0509053943056945,
+      "apr": {
+        "BTCB": {
+          "venus": {
+            "DepositAPR": 0.0003,
+            "LTV": 0.8
+          },
+          "aavev3": {
+            "BorrowAPR": 0.20136220220752185
+          }
+        },
+        "USDC": {
+          "venus": {
+            "BorrowAPR": 0.0664
+          },
+          "aavev3": {
+            "DepositAPR": 2.780828394537759,
+            "LTV": 0.75
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "BTCB",
+        "USDT"
+      ],
+      "estimate_apr": 2.0135676513423264,
+      "apr": {
+        "BTCB": {
+          "venus": {
+            "DepositAPR": 0.0003,
+            "LTV": 0.8
+          },
+          "aavev3": {
+            "BorrowAPR": 0.20136220220752185
+          }
+        },
+        "USDT": {
+          "venus": {
+            "BorrowAPR": 0.0911
+          },
+          "aavev3": {
+            "DepositAPR": 2.7588562158335495,
+            "LTV": 0.75
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "ETH",
+        "FDUSD"
+      ],
+      "estimate_apr": 0.8599535553859662,
+      "apr": {
+        "ETH": {
+          "venus": {
+            "DepositAPR": 0.0117,
+            "LTV": 0.8
+          },
+          "aavev3": {
+            "BorrowAPR": 1.790455549110857
+          }
+        },
+        "FDUSD": {
+          "venus": {
+            "BorrowAPR": 0.052
+          },
+          "aavev3": {
+            "DepositAPR": 2.3720708286100574,
+            "LTV": 0.7
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "ETH",
+        "USDC"
+      ],
+      "estimate_apr": 1.1042893861636933,
+      "apr": {
+        "ETH": {
+          "venus": {
+            "DepositAPR": 0.0117,
+            "LTV": 0.8
+          },
+          "aavev3": {
+            "BorrowAPR": 1.790455549110857
+          }
+        },
+        "USDC": {
+          "venus": {
+            "BorrowAPR": 0.0664
+          },
+          "aavev3": {
+            "DepositAPR": 2.780828394537759,
+            "LTV": 0.75
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "ETH",
+        "USDT"
+      ],
+      "estimate_apr": 1.067035503069546,
+      "apr": {
+        "ETH": {
+          "venus": {
+            "DepositAPR": 0.0117,
+            "LTV": 0.8
+          },
+          "aavev3": {
+            "BorrowAPR": 1.790455549110857
+          }
+        },
+        "USDT": {
+          "venus": {
+            "BorrowAPR": 0.091
+          },
+          "aavev3": {
+            "DepositAPR": 2.7588610406700753,
+            "LTV": 0.75
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "radiant"
+      ],
+      "pairToken": [
+        "WBNB",
+        "USDC"
+      ],
+      "estimate_apr": 2.98165566332912,
+      "apr": {
+        "WBNB": {
+          "venus": {
+            "DepositAPR": 0.0019,
+            "LTV": 0.78
+          },
+          "radiant": {
+            "BorrowAPR": 9.411337262338543
+          }
+        },
+        "USDC": {
+          "venus": {
+            "BorrowAPR": 0.0664
+          },
+          "radiant": {
+            "DepositAPR": 11.4165852756774,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "radiant"
+      ],
+      "pairToken": [
+        "WBNB",
+        "USDT"
+      ],
+      "estimate_apr": 0.58130418740098,
+      "apr": {
+        "WBNB": {
+          "venus": {
+            "DepositAPR": 0.0019,
+            "LTV": 0.78
+          },
+          "radiant": {
+            "BorrowAPR": 9.411337262338543
+          }
+        },
+        "USDT": {
+          "venus": {
+            "BorrowAPR": 0.091
+          },
+          "radiant": {
+            "DepositAPR": 8.36381158859004,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "radiant"
+      ],
+      "pairToken": [
+        "BTCB",
+        "USDC"
+      ],
+      "estimate_apr": 3.476639960411341,
+      "apr": {
+        "BTCB": {
+          "venus": {
+            "DepositAPR": 0.0003,
+            "LTV": 0.8
+          },
+          "radiant": {
+            "BorrowAPR": 8.755781656454028
+          }
+        },
+        "USDC": {
+          "venus": {
+            "BorrowAPR": 0.0664
+          },
+          "radiant": {
+            "DepositAPR": 11.4165852756774,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "radiant"
+      ],
+      "pairToken": [
+        "BTCB",
+        "USDT"
+      ],
+      "estimate_apr": 1.0147410107414536,
+      "apr": {
+        "BTCB": {
+          "venus": {
+            "DepositAPR": 0.0003,
+            "LTV": 0.8
+          },
+          "radiant": {
+            "BorrowAPR": 8.755781656454028
+          }
+        },
+        "USDT": {
+          "venus": {
+            "BorrowAPR": 0.091
+          },
+          "radiant": {
+            "DepositAPR": 8.36381158859004,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "radiant"
+      ],
+      "pairToken": [
+        "ETH",
+        "USDC"
+      ],
+      "estimate_apr": 3.2289707948263087,
+      "apr": {
+        "ETH": {
+          "venus": {
+            "DepositAPR": 0.0117,
+            "LTV": 0.8
+          },
+          "radiant": {
+            "BorrowAPR": 9.15416472768064
+          }
+        },
+        "USDC": {
+          "venus": {
+            "BorrowAPR": 0.0664
+          },
+          "radiant": {
+            "DepositAPR": 11.4165852756774,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "radiant"
+      ],
+      "pairToken": [
+        "ETH",
+        "USDT"
+      ],
+      "estimate_apr": 0.7670718451564215,
+      "apr": {
+        "ETH": {
+          "venus": {
+            "DepositAPR": 0.0117,
+            "LTV": 0.8
+          },
+          "radiant": {
+            "BorrowAPR": 9.15416472768064
+          }
+        },
+        "USDT": {
+          "venus": {
+            "BorrowAPR": 0.091
+          },
+          "radiant": {
+            "DepositAPR": 8.36381158859004,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "venus",
+        "radiant"
+      ],
+      "pairToken": [
+        "USDT",
+        "USDC"
+      ],
+      "estimate_apr": 1.1031713373903291,
+      "apr": {
+        "USDT": {
+          "venus": {
+            "DepositAPR": 0.0466,
+            "LTV": 0.8
+          },
+          "radiant": {
+            "BorrowAPR": 12.510626379924359
+          }
+        },
+        "USDC": {
+          "venus": {
+            "BorrowAPR": 0.0664
+          },
+          "radiant": {
+            "DepositAPR": 11.4165852756774,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "BNB",
+      "pairProtocol": [
+        "radiant",
+        "venus"
+      ],
+      "pairToken": [
+        "USDC",
+        "BTCB"
+      ],
+      "estimate_apr": 0.25973325127031544,
+      "apr": {
+        "USDC": {
+          "radiant": {
+            "DepositAPR": 11.4165852756774,
+            "LTV": 0.8
+          },
+          "venus": {
+            "BorrowAPR": 0.0664
+          }
+        },
+        "BTCB": {
+          "radiant": {
+            "BorrowAPR": 8.755781656454028
+          },
+          "venus": {
+            "DepositAPR": 0.0003,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "aavev3",
+        "venus"
+      ],
+      "pairToken": [
+        "WETH",
+        "WBTC"
+      ],
+      "estimate_apr": 0.7867561047461827,
+      "apr": {
+        "WETH": {
+          "aavev3": {
+            "DepositAPR": 1.983288557788574,
+            "LTV": 0.805
+          },
+          "venus": {
+            "BorrowAPR": 0.0129
+          }
+        },
+        "WBTC": {
+          "aavev3": {
+            "BorrowAPR": 0.5006546422592159
+          },
+          "venus": {
+            "DepositAPR": 0.0002,
+            "LTV": 0.75
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "aavev3",
+        "venus"
+      ],
+      "pairToken": [
+        "USDC",
+        "WBTC"
+      ],
+      "estimate_apr": 1.1309974222943033,
+      "apr": {
+        "USDC": {
+          "aavev3": {
+            "DepositAPR": 2.766834940424383,
+            "LTV": 0.75
+          },
+          "venus": {
+            "BorrowAPR": 0.0889
+          }
+        },
+        "WBTC": {
+          "aavev3": {
+            "BorrowAPR": 0.5006546422592159
+          },
+          "venus": {
+            "DepositAPR": 0.0002,
+            "LTV": 0.75
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "aavev3",
+        "venus"
+      ],
+      "pairToken": [
+        "DAI",
+        "WBTC"
+      ],
+      "estimate_apr": 0.8425026063414621,
+      "apr": {
+        "DAI": {
+          "aavev3": {
+            "DepositAPR": 2.5463471554809907,
+            "LTV": 0.63
+          },
+          "venus": {
+            "BorrowAPR": 0.096
+          }
+        },
+        "WBTC": {
+          "aavev3": {
+            "BorrowAPR": 0.5006546422592159
+          },
+          "venus": {
+            "DepositAPR": 0.0002,
+            "LTV": 0.75
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "aavev3",
+        "venus"
+      ],
+      "pairToken": [
+        "USDT",
+        "WBTC"
+      ],
+      "estimate_apr": 0.8281213982393576,
+      "apr": {
+        "USDT": {
+          "aavev3": {
+            "DepositAPR": 2.211088696027083,
+            "LTV": 0.75
+          },
+          "venus": {
+            "BorrowAPR": 0.0716
+          }
+        },
+        "WBTC": {
+          "aavev3": {
+            "BorrowAPR": 0.5006546577011687
+          },
+          "venus": {
+            "DepositAPR": 0.0002,
+            "LTV": 0.75
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "crvUSD",
+        "FRAX"
+      ],
+      "estimate_apr": 2.2200906373618228,
+      "apr": {
+        "crvUSD": {
+          "venus": {
+            "DepositAPR": 0.0043,
+            "LTV": 0.78
+          },
+          "aavev3": {
+            "BorrowAPR": 4.452535322353913
+          }
+        },
+        "FRAX": {
+          "venus": {
+            "BorrowAPR": 0.0015
+          },
+          "aavev3": {
+            "DepositAPR": 2.8477700478997727,
+            "LTV": 0
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "DAI",
+        "crvUSD"
+      ],
+      "estimate_apr": 1.7608457720637245,
+      "apr": {
+        "DAI": {
+          "venus": {
+            "DepositAPR": 0.0442,
+            "LTV": 0.75
+          },
+          "aavev3": {
+            "BorrowAPR": 4.705545153993116
+          }
+        },
+        "crvUSD": {
+          "venus": {
+            "BorrowAPR": 0.0312
+          },
+          "aavev3": {
+            "DepositAPR": 2.378994362751633,
+            "LTV": 0
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "DAI",
+        "FRAX"
+      ],
+      "estimate_apr": 2.1347025359248297,
+      "apr": {
+        "DAI": {
+          "venus": {
+            "DepositAPR": 0.0442,
+            "LTV": 0.75
+          },
+          "aavev3": {
+            "BorrowAPR": 4.705545153993116
+          }
+        },
+        "FRAX": {
+          "venus": {
+            "BorrowAPR": 0.0015
+          },
+          "aavev3": {
+            "DepositAPR": 2.8477700478997727,
+            "LTV": 0
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "USDC",
+        "crvUSD"
+      ],
+      "estimate_apr": 1.8312796029462737,
+      "apr": {
+        "USDC": {
+          "venus": {
+            "DepositAPR": 0.0445,
+            "LTV": 0.78
+          },
+          "aavev3": {
+            "BorrowAPR": 4.478388596708398
+          }
+        },
+        "crvUSD": {
+          "venus": {
+            "BorrowAPR": 0.0312
+          },
+          "aavev3": {
+            "DepositAPR": 2.378994362751633,
+            "LTV": 0
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "USDC",
+        "FRAX"
+      ],
+      "estimate_apr": 2.2200906373618228,
+      "apr": {
+        "USDC": {
+          "venus": {
+            "DepositAPR": 0.0445,
+            "LTV": 0.78
+          },
+          "aavev3": {
+            "BorrowAPR": 4.478388596708398
+          }
+        },
+        "FRAX": {
+          "venus": {
+            "BorrowAPR": 0.0015
+          },
+          "aavev3": {
+            "DepositAPR": 2.8477700478997727,
+            "LTV": 0
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "USDT",
+        "crvUSD"
+      ],
+      "estimate_apr": 1.8312796029462737,
+      "apr": {
+        "USDT": {
+          "venus": {
+            "DepositAPR": 0.0291,
+            "LTV": 0.78
+          },
+          "aavev3": {
+            "BorrowAPR": 4.002976902179334
+          }
+        },
+        "crvUSD": {
+          "venus": {
+            "BorrowAPR": 0.0312
+          },
+          "aavev3": {
+            "DepositAPR": 2.378994362751633,
+            "LTV": 0
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "USDT",
+        "FRAX"
+      ],
+      "estimate_apr": 2.2200906373618228,
+      "apr": {
+        "USDT": {
+          "venus": {
+            "DepositAPR": 0.0291,
+            "LTV": 0.78
+          },
+          "aavev3": {
+            "BorrowAPR": 4.002976902179334
+          }
+        },
+        "FRAX": {
+          "venus": {
+            "BorrowAPR": 0.0015
+          },
+          "aavev3": {
+            "DepositAPR": 2.8477700478997727,
+            "LTV": 0
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "WBTC",
+        "crvUSD"
+      ],
+      "estimate_apr": 1.7608457720637245,
+      "apr": {
+        "WBTC": {
+          "venus": {
+            "DepositAPR": 0.0002,
+            "LTV": 0.75
+          },
+          "aavev3": {
+            "BorrowAPR": 0.5007975440357617
+          }
+        },
+        "crvUSD": {
+          "venus": {
+            "BorrowAPR": 0.0312
+          },
+          "aavev3": {
+            "DepositAPR": 2.378994362751633,
+            "LTV": 0
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "WBTC",
+        "DAI"
+      ],
+      "estimate_apr": 1.6012280270538457,
+      "apr": {
+        "WBTC": {
+          "venus": {
+            "DepositAPR": 0.0002,
+            "LTV": 0.75
+          },
+          "aavev3": {
+            "BorrowAPR": 0.5007975440357617
+          }
+        },
+        "DAI": {
+          "venus": {
+            "BorrowAPR": 0.096
+          },
+          "aavev3": {
+            "DepositAPR": 2.5463471554809907,
+            "LTV": 0.63
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "WBTC",
+        "FRAX"
+      ],
+      "estimate_apr": 2.1347025359248297,
+      "apr": {
+        "WBTC": {
+          "venus": {
+            "DepositAPR": 0.0002,
+            "LTV": 0.75
+          },
+          "aavev3": {
+            "BorrowAPR": 0.5007983363908851
+          }
+        },
+        "FRAX": {
+          "venus": {
+            "BorrowAPR": 0.0015
+          },
+          "aavev3": {
+            "DepositAPR": 2.8477700478997727,
+            "LTV": 0
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "WBTC",
+        "USDC"
+      ],
+      "estimate_apr": 1.7275379519426202,
+      "apr": {
+        "WBTC": {
+          "venus": {
+            "DepositAPR": 0.0002,
+            "LTV": 0.75
+          },
+          "aavev3": {
+            "BorrowAPR": 0.5007983363908851
+          }
+        },
+        "USDC": {
+          "venus": {
+            "BorrowAPR": 0.0889
+          },
+          "aavev3": {
+            "DepositAPR": 2.7677326882166575,
+            "LTV": 0.75
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "WBTC",
+        "USDT"
+      ],
+      "estimate_apr": 1.3231829658146865,
+      "apr": {
+        "WBTC": {
+          "venus": {
+            "DepositAPR": 0.0002,
+            "LTV": 0.75
+          },
+          "aavev3": {
+            "BorrowAPR": 0.5007983363908851
+          }
+        },
+        "USDT": {
+          "venus": {
+            "BorrowAPR": 0.0716
+          },
+          "aavev3": {
+            "DepositAPR": 2.211292706712746,
+            "LTV": 0.75
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "WBTC",
+        "WETH"
+      ],
+      "estimate_apr": 1.1601037488212305,
+      "apr": {
+        "WBTC": {
+          "venus": {
+            "DepositAPR": 0.0002,
+            "LTV": 0.75
+          },
+          "aavev3": {
+            "BorrowAPR": 0.5007983363908851
+          }
+        },
+        "WETH": {
+          "venus": {
+            "BorrowAPR": 0.0129
+          },
+          "aavev3": {
+            "DepositAPR": 1.96268665922297,
+            "LTV": 0.805
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "WETH",
+        "crvUSD"
+      ],
+      "estimate_apr": 1.7608457720637245,
+      "apr": {
+        "WETH": {
+          "venus": {
+            "DepositAPR": 0.0044,
+            "LTV": 0.75
+          },
+          "aavev3": {
+            "BorrowAPR": 2.631944054383844
+          }
+        },
+        "crvUSD": {
+          "venus": {
+            "BorrowAPR": 0.0312
+          },
+          "aavev3": {
+            "DepositAPR": 2.378994362751633,
+            "LTV": 0
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "WETH",
+        "DAI"
+      ],
+      "estimate_apr": 0.5962458009143766,
+      "apr": {
+        "WETH": {
+          "venus": {
+            "DepositAPR": 0.0044,
+            "LTV": 0.75
+          },
+          "aavev3": {
+            "BorrowAPR": 2.631944054383844
+          }
+        },
+        "DAI": {
+          "venus": {
+            "BorrowAPR": 0.096
+          },
+          "aavev3": {
+            "DepositAPR": 2.5463471554809907,
+            "LTV": 0.63
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "WETH",
+        "FRAX"
+      ],
+      "estimate_apr": 2.1347025359248297,
+      "apr": {
+        "WETH": {
+          "venus": {
+            "DepositAPR": 0.0044,
+            "LTV": 0.75
+          },
+          "aavev3": {
+            "BorrowAPR": 2.631944054383844
+          }
+        },
+        "FRAX": {
+          "venus": {
+            "BorrowAPR": 0.0015
+          },
+          "aavev3": {
+            "DepositAPR": 2.8477700478997727,
+            "LTV": 0
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "WETH",
+        "USDC"
+      ],
+      "estimate_apr": 0.5311309855715809,
+      "apr": {
+        "WETH": {
+          "venus": {
+            "DepositAPR": 0.0044,
+            "LTV": 0.75
+          },
+          "aavev3": {
+            "BorrowAPR": 2.631944054383844
+          }
+        },
+        "USDC": {
+          "venus": {
+            "BorrowAPR": 0.0889
+          },
+          "aavev3": {
+            "DepositAPR": 2.7677326882166575,
+            "LTV": 0.75
+          }
+        }
+      }
+    },
+    {
+      "chain": "ETHEREUM",
+      "pairProtocol": [
+        "venus",
+        "aavev3"
+      ],
+      "pairToken": [
+        "WETH",
+        "USDT"
+      ],
+      "estimate_apr": 0.12690706525769135,
+      "apr": {
+        "WETH": {
+          "venus": {
+            "DepositAPR": 0.0044,
+            "LTV": 0.75
+          },
+          "aavev3": {
+            "BorrowAPR": 2.631944054383844
+          }
+        },
+        "USDT": {
+          "venus": {
+            "BorrowAPR": 0.0716
+          },
+          "aavev3": {
+            "DepositAPR": 2.2114674611314715,
+            "LTV": 0.75
+          }
+        }
+      }
+    },
+    {
+      "chain": "ARBITRUM",
+      "pairProtocol": [
+        "aavev3",
+        "radiant"
+      ],
+      "pairToken": [
+        "USDC",
+        "WBTC"
+      ],
+      "estimate_apr": 1.4382421922044877,
+      "apr": {
+        "USDC": {
+          "aavev3": {
+            "DepositAPR": 2.820725561372496,
+            "LTV": 0.75
+          },
+          "radiant": {
+            "BorrowAPR": 5.523387900259462
+          }
+        },
+        "WBTC": {
+          "aavev3": {
+            "BorrowAPR": 0.2868171162924679
+          },
+          "radiant": {
+            "DepositAPR": 4.096337009785994,
+            "LTV": 0.7
+          }
+        }
+      }
+    },
+    {
+      "chain": "ARBITRUM",
+      "pairProtocol": [
+        "aavev3",
+        "radiant"
+      ],
+      "pairToken": [
+        "USDC",
+        "WETH"
+      ],
+      "estimate_apr": 0.10317522226880493,
+      "apr": {
+        "USDC": {
+          "aavev3": {
+            "DepositAPR": 2.820725561372496,
+            "LTV": 0.75
+          },
+          "radiant": {
+            "BorrowAPR": 5.523387900259462
+          }
+        },
+        "WETH": {
+          "aavev3": {
+            "BorrowAPR": 2.450938989860343
+          },
+          "radiant": {
+            "DepositAPR": 4.7506358239949895,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "ARBITRUM",
+      "pairProtocol": [
+        "aavev3",
+        "radiant"
+      ],
+      "pairToken": [
+        "USDC",
+        "USD₮0"
+      ],
+      "estimate_apr": 2.0647734824568778,
+      "apr": {
+        "USDC": {
+          "aavev3": {
+            "DepositAPR": 2.820725561372496,
+            "LTV": 0.75
+          },
+          "radiant": {
+            "BorrowAPR": 5.523387900259462
+          }
+        },
+        "USD₮0": {
+          "aavev3": {
+            "BorrowAPR": 4.625563164720287
+          },
+          "radiant": {
+            "DepositAPR": 9.540724345772363,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "ARBITRUM",
+      "pairProtocol": [
+        "aavev3",
+        "radiant"
+      ],
+      "pairToken": [
+        "USDC",
+        "wstETH"
+      ],
+      "estimate_apr": 0.12442258758357538,
+      "apr": {
+        "USDC": {
+          "aavev3": {
+            "DepositAPR": 2.820725561372496,
+            "LTV": 0.75
+          },
+          "radiant": {
+            "BorrowAPR": 5.523387900259462
+          }
+        },
+        "wstETH": {
+          "aavev3": {
+            "BorrowAPR": 0.011861182661150653
+          },
+          "radiant": {
+            "DepositAPR": 2.069621603326794,
+            "LTV": 0.7
+          }
+        }
+      }
+    },
+    {
+      "chain": "ARBITRUM",
+      "pairProtocol": [
+        "aavev3",
+        "radiant"
+      ],
+      "pairToken": [
+        "USDC",
+        "ARB"
+      ],
+      "estimate_apr": 1.1898697335636426,
+      "apr": {
+        "USDC": {
+          "aavev3": {
+            "DepositAPR": 2.820725561372496,
+            "LTV": 0.75
+          },
+          "radiant": {
+            "BorrowAPR": 5.523387900259462
+          }
+        },
+        "ARB": {
+          "aavev3": {
+            "BorrowAPR": 2.2325841626519027
+          },
+          "radiant": {
+            "DepositAPR": 5.3866212972911995,
+            "LTV": 0.58
+          }
+        }
+      }
+    },
+    {
+      "chain": "ARBITRUM",
+      "pairProtocol": [
+        "aavev3",
+        "radiant"
+      ],
+      "pairToken": [
+        "weETH",
+        "USD₮0"
+      ],
+      "estimate_apr": 0.1351613272288857,
+      "apr": {
+        "weETH": {
+          "aavev3": {
+            "DepositAPR": 0.01564401647690209,
+            "LTV": 0.725
+          },
+          "radiant": {
+            "BorrowAPR": 5.926537759868942
+          }
+        },
+        "USD₮0": {
+          "aavev3": {
+            "BorrowAPR": 4.625579934191303
+          },
+          "radiant": {
+            "DepositAPR": 9.540724345772363,
+            "LTV": 0.8
+          }
+        }
+      }
+    },
+    {
+      "chain": "ARBITRUM",
+      "pairProtocol": [
+        "radiant",
+        "aavev3"
+      ],
+      "pairToken": [
+        "WBTC",
+        "USDC"
+      ],
+      "estimate_apr": 0.10813430686322478,
+      "apr": {
+        "WBTC": {
+          "radiant": {
+            "DepositAPR": 4.096337009785994,
+            "LTV": 0.7
+          },
+          "aavev3": {
+            "BorrowAPR": 0.2868171162924679
+          }
+        },
+        "USDC": {
+          "radiant": {
+            "BorrowAPR": 5.523387900259462
+          },
+          "aavev3": {
+            "DepositAPR": 2.820725561372496,
+            "LTV": 0.75
+          }
+        }
+      }
+    },
+    {
+      "chain": "ARBITRUM",
+      "pairProtocol": [
+        "radiant",
+        "aavev3"
+      ],
+      "pairToken": [
+        "USD₮0",
+        "USDC"
+      ],
+      "estimate_apr": 0.7869924536146886,
+      "apr": {
+        "USD₮0": {
+          "radiant": {
+            "DepositAPR": 9.540724345772363,
+            "LTV": 0.8
+          },
+          "aavev3": {
+            "BorrowAPR": 4.625579934191303
+          }
+        },
+        "USDC": {
+          "radiant": {
+            "BorrowAPR": 5.523387900259462
+          },
+          "aavev3": {
+            "DepositAPR": 2.820770158592027,
+            "LTV": 0.75
+          }
+        }
+      }
+    }
+  ]
+}
