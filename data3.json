@@ -1,0 +1,150 @@
+{
+  "ARBITRUM": {
+    "strategy 3": [
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "silov1.0xfc6778a6955e1cecac448051de967f9b5ff4d647",
+          "aavev3"
+        ],
+        "pairToken": [
+          "USDC",
+          "WETH"
+        ],
+        "pairTokenAddress": [
+          "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+          "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
+        ],
+        "estimate_apr": 0.017440960270865516,
+        "apr": {
+          "USDC": {
+            "silov1.0xfc6778a6955e1cecac448051de967f9b5ff4d647": {
+              "DepositAPR": 0.0774,
+              "LTV": 0.8
+            },
+            "aavev3": {
+              "BorrowAPR": 0.07144342526112032
+            }
+          },
+          "WETH": {
+            "silov1.0xfc6778a6955e1cecac448051de967f9b5ff4d647": {
+              "BorrowAPR": 0.0001
+            },
+            "aavev3": {
+              "DepositAPR": 0.01713594054747815,
+              "LTV": 0.8
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "silov1.0xae1eb69e880670ca47c50c9ce712ec2b48fac3b6",
+          "aavev3"
+        ],
+        "pairToken": [
+          "USDC",
+          "WETH"
+        ],
+        "pairTokenAddress": [
+          "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+          "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
+        ],
+        "estimate_apr": 0.029376960270865525,
+        "apr": {
+          "USDC": {
+            "silov1.0xae1eb69e880670ca47c50c9ce712ec2b48fac3b6": {
+              "DepositAPR": 0.1043,
+              "LTV": 0.8
+            },
+            "aavev3": {
+              "BorrowAPR": 0.07144342526112032
+            }
+          },
+          "WETH": {
+            "silov1.0xae1eb69e880670ca47c50c9ce712ec2b48fac3b6": {
+              "BorrowAPR": 0.0067
+            },
+            "aavev3": {
+              "DepositAPR": 0.01713594054747815,
+              "LTV": 0.8
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "aavev3",
+          "silov1.0xfc6778a6955e1cecac448051de967f9b5ff4d647"
+        ],
+        "pairToken": [
+          "WETH",
+          "USDC"
+        ],
+        "pairTokenAddress": [
+          "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+          "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"
+        ],
+        "estimate_apr": 0.015668262171343147,
+        "apr": {
+          "WETH": {
+            "aavev3": {
+              "DepositAPR": 0.01713594121912407,
+              "LTV": 0.8
+            },
+            "silov1.0xfc6778a6955e1cecac448051de967f9b5ff4d647": {
+              "BorrowAPR": 0.0001
+            }
+          },
+          "USDC": {
+            "aavev3": {
+              "BorrowAPR": 0.07144342526112032
+            },
+            "silov1.0xfc6778a6955e1cecac448051de967f9b5ff4d647": {
+              "DepositAPR": 0.0774,
+              "LTV": 0.8
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "aavev3",
+          "silov1.0xae1eb69e880670ca47c50c9ce712ec2b48fac3b6"
+        ],
+        "pairToken": [
+          "WETH",
+          "USDC"
+        ],
+        "pairTokenAddress": [
+          "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+          "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"
+        ],
+        "estimate_apr": 0.032964262171343156,
+        "apr": {
+          "WETH": {
+            "aavev3": {
+              "DepositAPR": 0.01713594121912407,
+              "LTV": 0.8
+            },
+            "silov1.0xae1eb69e880670ca47c50c9ce712ec2b48fac3b6": {
+              "BorrowAPR": 0.0067
+            }
+          },
+          "USDC": {
+            "aavev3": {
+              "BorrowAPR": 0.07144342526112032
+            },
+            "silov1.0xae1eb69e880670ca47c50c9ce712ec2b48fac3b6": {
+              "DepositAPR": 0.1043,
+              "LTV": 0.8
+            }
+          }
+        }
+      }
+    ]
+  }
+}
