@@ -1,38 +1,1338 @@
 {
-  "ARBITRUM": {
+  "ETHEREUM": {
     "strategy 2": [
       {
-        "chain": "ARBITRUM",
+        "chain": "ETHEREUM",
         "pairProtocol": [
-          "silov1.0xde998e5eef06dd09ff467086610b175f179a66a0",
-          "aavev3"
+          "compoundv2",
+          "radiant"
+        ],
+        "pairToken": [
+          "LINK",
+          "WETH"
+        ],
+        "pairTokenAddress": [
+          "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+          "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+        ],
+        "estimate_apr": 0.003302222565058616,
+        "apr": {
+          "LINK": {
+            "compoundv2": {
+              "DepositAPR": 0.0002,
+              "LTV": 0.26
+            },
+            "radiant": {
+              "BorrowAPR": 0.07817815415905549
+            }
+          },
+          "WETH": {
+            "compoundv2": {
+              "BorrowAPR": 0.0227
+            },
+            "radiant": {
+              "DepositAPR": 0.0977833793467006,
+              "LTV": 0.8
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "compoundv2",
+          "radiant"
         ],
         "pairToken": [
           "USDC",
           "WETH"
         ],
         "pairTokenAddress": [
-          "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
-          "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
+          "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
         ],
-        "estimate_apr": 0.029658946661174343,
+        "estimate_apr": 0.002275023260276326,
         "apr": {
           "USDC": {
-            "silov1.0xde998e5eef06dd09ff467086610b175f179a66a0": {
-              "DepositAPR": 0.118,
-              "LTV": 0.8
+            "compoundv2": {
+              "DepositAPR": 0.0267,
+              "LTV": 0.85
             },
-            "aavev3": {
-              "BorrowAPR": 0.07144344728735483
+            "radiant": {
+              "BorrowAPR": 0.1172086017417929
             }
           },
           "WETH": {
-            "silov1.0xde998e5eef06dd09ff467086610b175f179a66a0": {
-              "BorrowAPR": 0.0173
+            "compoundv2": {
+              "BorrowAPR": 0.0227
+            },
+            "radiant": {
+              "DepositAPR": 0.0977833793467006,
+              "LTV": 0.8
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "venus",
+          "compoundv2"
+        ],
+        "pairToken": [
+          "USDC",
+          "DAI"
+        ],
+        "pairTokenAddress": [
+          "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "0x6B175474E89094C44Da98b954EedeAC495271d0F"
+        ],
+        "estimate_apr": 0.001176239999999995,
+        "apr": {
+          "USDC": {
+            "venus": {
+              "DepositAPR": 0.0383,
+              "LTV": 0.78
+            },
+            "compoundv2": {
+              "BorrowAPR": 0.0471
+            }
+          },
+          "DAI": {
+            "venus": {
+              "BorrowAPR": 0.0221
+            },
+            "compoundv2": {
+              "DepositAPR": 0.031,
+              "LTV": 0.84
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "venus",
+          "aavev3"
+        ],
+        "pairToken": [
+          "USDT",
+          "DAI"
+        ],
+        "pairTokenAddress": [
+          "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "0x6B175474E89094C44Da98b954EedeAC495271d0F"
+        ],
+        "estimate_apr": 0.0006691885402180832,
+        "apr": {
+          "USDT": {
+            "venus": {
+              "DepositAPR": 0.0389,
+              "LTV": 0.78
             },
             "aavev3": {
-              "DepositAPR": 0.01712844115635179,
+              "BorrowAPR": 0.048926757863701265
+            }
+          },
+          "DAI": {
+            "venus": {
+              "BorrowAPR": 0.0221
+            },
+            "aavev3": {
+              "DepositAPR": 0.029274791480052423,
+              "LTV": 0.63
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "venus",
+          "radiant"
+        ],
+        "pairToken": [
+          "USDC",
+          "WETH"
+        ],
+        "pairTokenAddress": [
+          "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+        ],
+        "estimate_apr": 0.015410068403547705,
+        "apr": {
+          "USDC": {
+            "venus": {
+              "DepositAPR": 0.0383,
+              "LTV": 0.78
+            },
+            "radiant": {
+              "BorrowAPR": 0.1172086017417929
+            }
+          },
+          "WETH": {
+            "venus": {
+              "BorrowAPR": 0.0149
+            },
+            "radiant": {
+              "DepositAPR": 0.0977833793467006,
               "LTV": 0.8
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "venus",
+          "radiant"
+        ],
+        "pairToken": [
+          "USDT",
+          "WETH"
+        ],
+        "pairTokenAddress": [
+          "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+        ],
+        "estimate_apr": 0.018496030027525725,
+        "apr": {
+          "USDT": {
+            "venus": {
+              "DepositAPR": 0.0389,
+              "LTV": 0.78
+            },
+            "radiant": {
+              "BorrowAPR": 0.11286315042131528
+            }
+          },
+          "WETH": {
+            "venus": {
+              "BorrowAPR": 0.0149
+            },
+            "radiant": {
+              "DepositAPR": 0.0977833793467006,
+              "LTV": 0.8
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "WETH",
+          "weETH"
+        ],
+        "pairTokenAddress": [
+          "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
+        ],
+        "estimate_apr": 0.17870870594414898,
+        "apr": {
+          "WETH": {
+            "aavev3": {
+              "DepositAPR": 0.018216153283443788,
+              "LTV": 0.805
+            },
+            "radiant": {
+              "BorrowAPR": 0.14054969957221006
+            }
+          },
+          "weETH": {
+            "aavev3": {
+              "BorrowAPR": 0.010228827655494589
+            },
+            "radiant": {
+              "DepositAPR": 0.32091904119205383,
+              "LTV": 0.725
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "wstETH",
+          "weETH"
+        ],
+        "pairTokenAddress": [
+          "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
+          "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
+        ],
+        "estimate_apr": 0.18532941192467128,
+        "apr": {
+          "wstETH": {
+            "aavev3": {
+              "DepositAPR": 0.0008987121184842996,
+              "LTV": 0.785
+            },
+            "radiant": {
+              "BorrowAPR": 0.10379773377721963
+            }
+          },
+          "weETH": {
+            "aavev3": {
+              "BorrowAPR": 0.010228827655494589
+            },
+            "radiant": {
+              "DepositAPR": 0.32091904119205383,
+              "LTV": 0.725
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "WBTC",
+          "WETH"
+        ],
+        "pairTokenAddress": [
+          "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+        ],
+        "estimate_apr": 0.002416156216067649,
+        "apr": {
+          "WBTC": {
+            "aavev3": {
+              "DepositAPR": 0.00017980165390968147,
+              "LTV": 0.73
+            },
+            "radiant": {
+              "BorrowAPR": 0.08657686597498872
+            }
+          },
+          "WETH": {
+            "aavev3": {
+              "BorrowAPR": 0.02535592485412827
+            },
+            "radiant": {
+              "DepositAPR": 0.0977833793467006,
+              "LTV": 0.8
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "WBTC",
+          "weETH"
+        ],
+        "pairTokenAddress": [
+          "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
+        ],
+        "estimate_apr": 0.18107820958975715,
+        "apr": {
+          "WBTC": {
+            "aavev3": {
+              "DepositAPR": 0.00017980165390968147,
+              "LTV": 0.73
+            },
+            "radiant": {
+              "BorrowAPR": 0.08657686597498872
+            }
+          },
+          "weETH": {
+            "aavev3": {
+              "BorrowAPR": 0.010228827655494589
+            },
+            "radiant": {
+              "DepositAPR": 0.32091904119205383,
+              "LTV": 0.725
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "USDC",
+          "WETH"
+        ],
+        "pairTokenAddress": [
+          "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+        ],
+        "estimate_apr": 0.00740458343689912,
+        "apr": {
+          "USDC": {
+            "aavev3": {
+              "DepositAPR": 0.03901525602090936,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.1172086017417929
+            }
+          },
+          "WETH": {
+            "aavev3": {
+              "BorrowAPR": 0.02535592485412827
+            },
+            "radiant": {
+              "DepositAPR": 0.0977833793467006,
+              "LTV": 0.8
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "USDC",
+          "rETH"
+        ],
+        "pairTokenAddress": [
+          "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "0xae78736Cd615f374D3085123A210448E74Fc6393"
+        ],
+        "estimate_apr": 0.002961482531441125,
+        "apr": {
+          "USDC": {
+            "aavev3": {
+              "DepositAPR": 0.03901525602090936,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.1172086017417929
+            }
+          },
+          "rETH": {
+            "aavev3": {
+              "BorrowAPR": 0.000628561122911792
+            },
+            "radiant": {
+              "DepositAPR": 0.06322221378882927,
+              "LTV": 0.75
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "USDC",
+          "weETH"
+        ],
+        "pairTokenAddress": [
+          "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
+        ],
+        "estimate_apr": 0.190500028416689,
+        "apr": {
+          "USDC": {
+            "aavev3": {
+              "DepositAPR": 0.03901525602090936,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.1172086017417929
+            }
+          },
+          "weETH": {
+            "aavev3": {
+              "BorrowAPR": 0.010228827655494589
+            },
+            "radiant": {
+              "DepositAPR": 0.32091904119205383,
+              "LTV": 0.725
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "LINK",
+          "WETH"
+        ],
+        "pairTokenAddress": [
+          "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+          "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+        ],
+        "estimate_apr": 0.006670375579831129,
+        "apr": {
+          "LINK": {
+            "aavev3": {
+              "DepositAPR": 0.0002771231263535726,
+              "LTV": 0.66
+            },
+            "radiant": {
+              "BorrowAPR": 0.07817815415905549
+            }
+          },
+          "WETH": {
+            "aavev3": {
+              "BorrowAPR": 0.02535592485412827
+            },
+            "radiant": {
+              "DepositAPR": 0.0977833793467006,
+              "LTV": 0.8
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "LINK",
+          "rETH"
+        ],
+        "pairTokenAddress": [
+          "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+          "0xae78736Cd615f374D3085123A210448E74Fc6393"
+        ],
+        "estimate_apr": 0.002750800398318085,
+        "apr": {
+          "LINK": {
+            "aavev3": {
+              "DepositAPR": 0.0002771231263535726,
+              "LTV": 0.66
+            },
+            "radiant": {
+              "BorrowAPR": 0.07817815415905549
+            }
+          },
+          "rETH": {
+            "aavev3": {
+              "BorrowAPR": 0.000628561122911792
+            },
+            "radiant": {
+              "DepositAPR": 0.06322221378882927,
+              "LTV": 0.75
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "LINK",
+          "weETH"
+        ],
+        "pairTokenAddress": [
+          "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+          "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
+        ],
+        "estimate_apr": 0.1677798975849812,
+        "apr": {
+          "LINK": {
+            "aavev3": {
+              "DepositAPR": 0.0002771231263535726,
+              "LTV": 0.66
+            },
+            "radiant": {
+              "BorrowAPR": 0.07817815415905549
+            }
+          },
+          "weETH": {
+            "aavev3": {
+              "BorrowAPR": 0.010228827655494589
+            },
+            "radiant": {
+              "DepositAPR": 0.32091904119205383,
+              "LTV": 0.725
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "USDT",
+          "WETH"
+        ],
+        "pairTokenAddress": [
+          "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+        ],
+        "estimate_apr": 0.008224677139879746,
+        "apr": {
+          "USDT": {
+            "aavev3": {
+              "DepositAPR": 0.036036627538732796,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.11286315042131528
+            }
+          },
+          "WETH": {
+            "aavev3": {
+              "BorrowAPR": 0.02535592485412827
+            },
+            "radiant": {
+              "DepositAPR": 0.0977833793467006,
+              "LTV": 0.8
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "USDT",
+          "rETH"
+        ],
+        "pairTokenAddress": [
+          "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "0xae78736Cd615f374D3085123A210448E74Fc6393"
+        ],
+        "estimate_apr": 0.0037303203779854577,
+        "apr": {
+          "USDT": {
+            "aavev3": {
+              "DepositAPR": 0.036036627538732796,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.11286315042131528
+            }
+          },
+          "rETH": {
+            "aavev3": {
+              "BorrowAPR": 0.000628561122911792
+            },
+            "radiant": {
+              "DepositAPR": 0.06322221378882927,
+              "LTV": 0.75
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "USDT",
+          "weETH"
+        ],
+        "pairTokenAddress": [
+          "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
+        ],
+        "estimate_apr": 0.19124323833501522,
+        "apr": {
+          "USDT": {
+            "aavev3": {
+              "DepositAPR": 0.036036627538732796,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.11286315042131528
+            }
+          },
+          "weETH": {
+            "aavev3": {
+              "BorrowAPR": 0.010228827655494589
+            },
+            "radiant": {
+              "DepositAPR": 0.32091904119205383,
+              "LTV": 0.725
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "rETH",
+          "weETH"
+        ],
+        "pairTokenAddress": [
+          "0xae78736Cd615f374D3085123A210448E74Fc6393",
+          "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
+        ],
+        "estimate_apr": 0.16096072367957268,
+        "apr": {
+          "rETH": {
+            "aavev3": {
+              "DepositAPR": 0.00000215887964131933,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.13252066273775034
+            }
+          },
+          "weETH": {
+            "aavev3": {
+              "BorrowAPR": 0.010228827655494589
+            },
+            "radiant": {
+              "DepositAPR": 0.32091904119205383,
+              "LTV": 0.725
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "USDS",
+          "WETH"
+        ],
+        "pairTokenAddress": [
+          "0xdC035D45d973E3EC169d2276DDab16f1e407384F",
+          "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+        ],
+        "estimate_apr": 0.03473676362106258,
+        "apr": {
+          "USDS": {
+            "aavev3": {
+              "DepositAPR": 0.018592822982081345,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.051232535062692444
+            }
+          },
+          "WETH": {
+            "aavev3": {
+              "BorrowAPR": 0.02535592485412827
+            },
+            "radiant": {
+              "DepositAPR": 0.0977833793467006,
+              "LTV": 0.8
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "USDS",
+          "wstETH"
+        ],
+        "pairTokenAddress": [
+          "0xdC035D45d973E3EC169d2276DDab16f1e407384F",
+          "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0"
+        ],
+        "estimate_apr": 0.00785967945396335,
+        "apr": {
+          "USDS": {
+            "aavev3": {
+              "DepositAPR": 0.018592822982081345,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.051232535062692444
+            }
+          },
+          "wstETH": {
+            "aavev3": {
+              "BorrowAPR": 0.004349741971915571
+            },
+            "radiant": {
+              "DepositAPR": 0.04094108424168892,
+              "LTV": 0.8
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "USDS",
+          "USDC"
+        ],
+        "pairTokenAddress": [
+          "0xdC035D45d973E3EC169d2276DDab16f1e407384F",
+          "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+        ],
+        "estimate_apr": 0.007479686870296607,
+        "apr": {
+          "USDS": {
+            "aavev3": {
+              "DepositAPR": 0.018592822982081345,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.051232535062692444
+            }
+          },
+          "USDC": {
+            "aavev3": {
+              "BorrowAPR": 0.05092173788280169
+            },
+            "radiant": {
+              "DepositAPR": 0.08700642337435271,
+              "LTV": 0.8
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "USDS",
+          "USDT"
+        ],
+        "pairTokenAddress": [
+          "0xdC035D45d973E3EC169d2276DDab16f1e407384F",
+          "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+        ],
+        "estimate_apr": 0.005451715121726885,
+        "apr": {
+          "USDS": {
+            "aavev3": {
+              "DepositAPR": 0.018592822982081345,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.051232535062692444
+            }
+          },
+          "USDT": {
+            "aavev3": {
+              "BorrowAPR": 0.04892583702306063
+            },
+            "radiant": {
+              "DepositAPR": 0.08067457457915479,
+              "LTV": 0.75
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "USDS",
+          "rETH"
+        ],
+        "pairTokenAddress": [
+          "0xdC035D45d973E3EC169d2276DDab16f1e407384F",
+          "0xae78736Cd615f374D3085123A210448E74Fc6393"
+        ],
+        "estimate_apr": 0.028585401454094366,
+        "apr": {
+          "USDS": {
+            "aavev3": {
+              "DepositAPR": 0.018592822982081345,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.051232535062692444
+            }
+          },
+          "rETH": {
+            "aavev3": {
+              "BorrowAPR": 0.000628561122911792
+            },
+            "radiant": {
+              "DepositAPR": 0.06322221378882927,
+              "LTV": 0.75
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "USDS",
+          "weETH"
+        ],
+        "pairTokenAddress": [
+          "0xdC035D45d973E3EC169d2276DDab16f1e407384F",
+          "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
+        ],
+        "estimate_apr": 0.21526981670858714,
+        "apr": {
+          "USDS": {
+            "aavev3": {
+              "DepositAPR": 0.018592822982081345,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.051232535062692444
+            }
+          },
+          "weETH": {
+            "aavev3": {
+              "BorrowAPR": 0.010228827655494589
+            },
+            "radiant": {
+              "DepositAPR": 0.32091904119205383,
+              "LTV": 0.725
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "radiant",
+          "aavev3"
+        ],
+        "pairToken": [
+          "WETH",
+          "USDS"
+        ],
+        "pairTokenAddress": [
+          "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "0xdC035D45d973E3EC169d2276DDab16f1e407384F"
+        ],
+        "estimate_apr": 0.017344777303920533,
+        "apr": {
+          "WETH": {
+            "radiant": {
+              "DepositAPR": 0.0977833793467006,
+              "LTV": 0.8
+            },
+            "aavev3": {
+              "BorrowAPR": 0.02535580106601825
+            }
+          },
+          "USDS": {
+            "radiant": {
+              "BorrowAPR": 0.051232535062692444
+            },
+            "aavev3": {
+              "DepositAPR": 0.018592822982081345,
+              "LTV": 0.75
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "radiant",
+          "aavev3"
+        ],
+        "pairToken": [
+          "rETH",
+          "USDS"
+        ],
+        "pairTokenAddress": [
+          "0xae78736Cd615f374D3085123A210448E74Fc6393",
+          "0xdC035D45d973E3EC169d2276DDab16f1e407384F"
+        ],
+        "estimate_apr": 0.010729185778047323,
+        "apr": {
+          "rETH": {
+            "radiant": {
+              "DepositAPR": 0.06322221378882927,
+              "LTV": 0.75
+            },
+            "aavev3": {
+              "BorrowAPR": 0.000628561122911792
+            }
+          },
+          "USDS": {
+            "radiant": {
+              "BorrowAPR": 0.051232535062692444
+            },
+            "aavev3": {
+              "DepositAPR": 0.018592876600650773,
+              "LTV": 0.75
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "radiant",
+          "aavev3"
+        ],
+        "pairToken": [
+          "weETH",
+          "USDT"
+        ],
+        "pairTokenAddress": [
+          "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+          "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+        ],
+        "estimate_apr": 0.11324158311977461,
+        "apr": {
+          "weETH": {
+            "radiant": {
+              "DepositAPR": 0.32091904119205383,
+              "LTV": 0.725
+            },
+            "aavev3": {
+              "BorrowAPR": 0.010228827655494589
+            }
+          },
+          "USDT": {
+            "radiant": {
+              "BorrowAPR": 0.11286315042131528
+            },
+            "aavev3": {
+              "DepositAPR": 0.036040777330653986,
+              "LTV": 0.75
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "radiant",
+          "aavev3"
+        ],
+        "pairToken": [
+          "weETH",
+          "USDC"
+        ],
+        "pairTokenAddress": [
+          "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+          "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+        ],
+        "estimate_apr": 0.11225286978756488,
+        "apr": {
+          "weETH": {
+            "radiant": {
+              "DepositAPR": 0.32091904119205383,
+              "LTV": 0.725
+            },
+            "aavev3": {
+              "BorrowAPR": 0.010228827655494589
+            }
+          },
+          "USDC": {
+            "radiant": {
+              "BorrowAPR": 0.1172086017417929
+            },
+            "aavev3": {
+              "DepositAPR": 0.03902248612394575,
+              "LTV": 0.75
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "radiant",
+          "aavev3"
+        ],
+        "pairToken": [
+          "weETH",
+          "WETH"
+        ],
+        "pairTokenAddress": [
+          "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+          "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+        ],
+        "estimate_apr": 0.09263462293454666,
+        "apr": {
+          "weETH": {
+            "radiant": {
+              "DepositAPR": 0.32091904119205383,
+              "LTV": 0.725
+            },
+            "aavev3": {
+              "BorrowAPR": 0.010228827655494589
+            }
+          },
+          "WETH": {
+            "radiant": {
+              "BorrowAPR": 0.14054969957221006
+            },
+            "aavev3": {
+              "DepositAPR": 0.0182159713781028,
+              "LTV": 0.805
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "radiant",
+          "aavev3"
+        ],
+        "pairToken": [
+          "weETH",
+          "WBTC"
+        ],
+        "pairTokenAddress": [
+          "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+          "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+        ],
+        "estimate_apr": 0.10179492099629611,
+        "apr": {
+          "weETH": {
+            "radiant": {
+              "DepositAPR": 0.32091904119205383,
+              "LTV": 0.725
+            },
+            "aavev3": {
+              "BorrowAPR": 0.010228827655494589
+            }
+          },
+          "WBTC": {
+            "radiant": {
+              "BorrowAPR": 0.08657686597498872
+            },
+            "aavev3": {
+              "DepositAPR": 0.00017979767439855215,
+              "LTV": 0.73
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "radiant",
+          "aavev3"
+        ],
+        "pairToken": [
+          "weETH",
+          "wstETH"
+        ],
+        "pairTokenAddress": [
+          "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+          "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0"
+        ],
+        "estimate_apr": 0.10221977707641117,
+        "apr": {
+          "weETH": {
+            "radiant": {
+              "DepositAPR": 0.32091904119205383,
+              "LTV": 0.725
+            },
+            "aavev3": {
+              "BorrowAPR": 0.010228827655494589
+            }
+          },
+          "wstETH": {
+            "radiant": {
+              "BorrowAPR": 0.10379773377721963
+            },
+            "aavev3": {
+              "DepositAPR": 0.0008987121184842996,
+              "LTV": 0.785
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "radiant",
+          "aavev3"
+        ],
+        "pairToken": [
+          "weETH",
+          "rETH"
+        ],
+        "pairTokenAddress": [
+          "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+          "0xae78736Cd615f374D3085123A210448E74Fc6393"
+        ],
+        "estimate_apr": 0.07286188831337503,
+        "apr": {
+          "weETH": {
+            "radiant": {
+              "DepositAPR": 0.32091904119205383,
+              "LTV": 0.725
+            },
+            "aavev3": {
+              "BorrowAPR": 0.010228827655494589
+            }
+          },
+          "rETH": {
+            "radiant": {
+              "BorrowAPR": 0.13252066273775034
+            },
+            "aavev3": {
+              "DepositAPR": 0.00000215887964131933,
+              "LTV": 0.75
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "radiant",
+          "aavev3"
+        ],
+        "pairToken": [
+          "weETH",
+          "LINK"
+        ],
+        "pairTokenAddress": [
+          "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+          "0x514910771AF9Ca656af840dff83E8264EcF986CA"
+        ],
+        "estimate_apr": 0.0921870196785347,
+        "apr": {
+          "weETH": {
+            "radiant": {
+              "DepositAPR": 0.32091904119205383,
+              "LTV": 0.725
+            },
+            "aavev3": {
+              "BorrowAPR": 0.010228827655494589
+            }
+          },
+          "LINK": {
+            "radiant": {
+              "BorrowAPR": 0.07817815415905549
+            },
+            "aavev3": {
+              "DepositAPR": 0.0002771231263535726,
+              "LTV": 0.66
+            }
+          }
+        }
+      },
+      {
+        "chain": "ETHEREUM",
+        "pairProtocol": [
+          "radiant",
+          "aavev3"
+        ],
+        "pairToken": [
+          "weETH",
+          "USDS"
+        ],
+        "pairTokenAddress": [
+          "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+          "0xdC035D45d973E3EC169d2276DDab16f1e407384F"
+        ],
+        "estimate_apr": 0.14527405122552386,
+        "apr": {
+          "weETH": {
+            "radiant": {
+              "DepositAPR": 0.32091904119205383,
+              "LTV": 0.725
+            },
+            "aavev3": {
+              "BorrowAPR": 0.010228827655494589
+            }
+          },
+          "USDS": {
+            "radiant": {
+              "BorrowAPR": 0.051232535062692444
+            },
+            "aavev3": {
+              "DepositAPR": 0.018592876600650773,
+              "LTV": 0.75
+            }
+          }
+        }
+      }
+    ]
+  },
+  "ARBITRUM": {
+    "strategy 2": [
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "silov1.0xa8897b4552c075e884bdb8e7b704eb10db29bf0d",
+          "aavev3"
+        ],
+        "pairToken": [
+          "WETH",
+          "USDC"
+        ],
+        "pairTokenAddress": [
+          "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+          "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"
+        ],
+        "estimate_apr": 0.03910108836660299,
+        "apr": {
+          "WETH": {
+            "silov1.0xa8897b4552c075e884bdb8e7b704eb10db29bf0d": {
+              "DepositAPR": 0.1799,
+              "LTV": 0.85
+            },
+            "aavev3": {
+              "BorrowAPR": 0.022980604876141075
+            }
+          },
+          "USDC": {
+            "silov1.0xa8897b4552c075e884bdb8e7b704eb10db29bf0d": {
+              "BorrowAPR": 0.0979
+            },
+            "aavev3": {
+              "DepositAPR": 0.026211734088403455,
+              "LTV": 0.75
             }
           }
         }
@@ -51,15 +1351,15 @@
           "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
           "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
         ],
-        "estimate_apr": 0.017691976780673746,
+        "estimate_apr": 0.0223061340948168,
         "apr": {
           "USDC": {
             "silov1.0xfc6778a6955e1cecac448051de967f9b5ff4d647": {
-              "DepositAPR": 0.0778,
+              "DepositAPR": 0.0926,
               "LTV": 0.8
             },
             "aavev3": {
-              "BorrowAPR": 0.07144344728735483
+              "BorrowAPR": 0.07632442900701984
             }
           },
           "WETH": {
@@ -67,43 +1367,7 @@
               "BorrowAPR": 0.0001
             },
             "aavev3": {
-              "DepositAPR": 0.01712972880572605,
-              "LTV": 0.8
-            }
-          }
-        }
-      },
-      {
-        "chain": "ARBITRUM",
-        "pairProtocol": [
-          "silov1.0xae1eb69e880670ca47c50c9ce712ec2b48fac3b6",
-          "aavev3"
-        ],
-        "pairToken": [
-          "USDC",
-          "WETH"
-        ],
-        "pairTokenAddress": [
-          "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
-          "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
-        ],
-        "estimate_apr": 0.029371976780673763,
-        "apr": {
-          "USDC": {
-            "silov1.0xae1eb69e880670ca47c50c9ce712ec2b48fac3b6": {
-              "DepositAPR": 0.1043,
-              "LTV": 0.8
-            },
-            "aavev3": {
-              "BorrowAPR": 0.07144344728735483
-            }
-          },
-          "WETH": {
-            "silov1.0xae1eb69e880670ca47c50c9ce712ec2b48fac3b6": {
-              "BorrowAPR": 0.0067
-            },
-            "aavev3": {
-              "DepositAPR": 0.01712972880572605,
+              "DepositAPR": 0.014962210824136866,
               "LTV": 0.8
             }
           }
@@ -113,34 +1377,34 @@
         "chain": "ARBITRUM",
         "pairProtocol": [
           "aavev3",
-          "silov1.0xde998e5eef06dd09ff467086610b175f179a66a0"
+          "silov1.0xa8897b4552c075e884bdb8e7b704eb10db29bf0d"
         ],
         "pairToken": [
-          "WETH",
-          "USDC"
+          "USDC",
+          "WETH"
         ],
         "pairTokenAddress": [
-          "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
-          "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"
+          "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+          "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
         ],
-        "estimate_apr": 0.037136383886047786,
+        "estimate_apr": 0.0719887611603989,
         "apr": {
-          "WETH": {
-            "aavev3": {
-              "DepositAPR": 0.01712988139835008,
-              "LTV": 0.8
-            },
-            "silov1.0xde998e5eef06dd09ff467086610b175f179a66a0": {
-              "BorrowAPR": 0.0173
-            }
-          },
           "USDC": {
             "aavev3": {
-              "BorrowAPR": 0.07144342526112032
+              "DepositAPR": 0.026211725180017225,
+              "LTV": 0.75
             },
-            "silov1.0xde998e5eef06dd09ff467086610b175f179a66a0": {
-              "DepositAPR": 0.118,
-              "LTV": 0.8
+            "silov1.0xa8897b4552c075e884bdb8e7b704eb10db29bf0d": {
+              "BorrowAPR": 0.0979
+            }
+          },
+          "WETH": {
+            "aavev3": {
+              "BorrowAPR": 0.0229799515224828
+            },
+            "silov1.0xa8897b4552c075e884bdb8e7b704eb10db29bf0d": {
+              "DepositAPR": 0.1799,
+              "LTV": 0.85
             }
           }
         }
@@ -159,11 +1423,11 @@
           "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
           "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"
         ],
-        "estimate_apr": 0.01598438388604779,
+        "estimate_apr": 0.022532302771616018,
         "apr": {
           "WETH": {
             "aavev3": {
-              "DepositAPR": 0.01712988139835008,
+              "DepositAPR": 0.014962243117878856,
               "LTV": 0.8
             },
             "silov1.0xfc6778a6955e1cecac448051de967f9b5ff4d647": {
@@ -172,46 +1436,10 @@
           },
           "USDC": {
             "aavev3": {
-              "BorrowAPR": 0.07144342526112032
+              "BorrowAPR": 0.07632441602978307
             },
             "silov1.0xfc6778a6955e1cecac448051de967f9b5ff4d647": {
-              "DepositAPR": 0.0778,
-              "LTV": 0.8
-            }
-          }
-        }
-      },
-      {
-        "chain": "ARBITRUM",
-        "pairProtocol": [
-          "aavev3",
-          "silov1.0xae1eb69e880670ca47c50c9ce712ec2b48fac3b6"
-        ],
-        "pairToken": [
-          "WETH",
-          "USDC"
-        ],
-        "pairTokenAddress": [
-          "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
-          "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"
-        ],
-        "estimate_apr": 0.03296043181547542,
-        "apr": {
-          "WETH": {
-            "aavev3": {
-              "DepositAPR": 0.017129956288080728,
-              "LTV": 0.8
-            },
-            "silov1.0xae1eb69e880670ca47c50c9ce712ec2b48fac3b6": {
-              "BorrowAPR": 0.0067
-            }
-          },
-          "USDC": {
-            "aavev3": {
-              "BorrowAPR": 0.07144342526112032
-            },
-            "silov1.0xae1eb69e880670ca47c50c9ce712ec2b48fac3b6": {
-              "DepositAPR": 0.1043,
+              "DepositAPR": 0.0926,
               "LTV": 0.8
             }
           }
@@ -224,31 +1452,31 @@
           "radiant"
         ],
         "pairToken": [
-          "LINK",
-          "USD₮0"
+          "WBTC",
+          "LINK"
         ],
         "pairTokenAddress": [
-          "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4",
-          "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
+          "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
+          "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4"
         ],
-        "estimate_apr": 0.0001983098646884309,
+        "estimate_apr": 0.07151033734682075,
         "apr": {
+          "WBTC": {
+            "aavev3": {
+              "DepositAPR": 0.00007199132876714148,
+              "LTV": 0.73
+            },
+            "radiant": {
+              "BorrowAPR": 0.08551025639553993
+            }
+          },
           "LINK": {
             "aavev3": {
-              "DepositAPR": 0.00038514546269934535,
-              "LTV": 0.66
+              "BorrowAPR": 0.007346827742781629
             },
             "radiant": {
-              "BorrowAPR": 0.052640874221215404
-            }
-          },
-          "USD₮0": {
-            "aavev3": {
-              "BorrowAPR": 0.04585818910691327
-            },
-            "radiant": {
-              "DepositAPR": 0.08796324160567828,
-              "LTV": 0.8
+              "DepositAPR": 0.1608410662647055,
+              "LTV": 0.65
             }
           }
         }
@@ -260,30 +1488,66 @@
           "radiant"
         ],
         "pairToken": [
-          "LINK",
+          "WBTC",
           "rETH"
         ],
         "pairTokenAddress": [
-          "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4",
+          "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
           "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8"
         ],
-        "estimate_apr": 0.01136889419512885,
+        "estimate_apr": 0.004411622119811869,
         "apr": {
-          "LINK": {
+          "WBTC": {
             "aavev3": {
-              "DepositAPR": 0.00038514546269934535,
-              "LTV": 0.66
+              "DepositAPR": 0.00007199132876714148,
+              "LTV": 0.73
             },
             "radiant": {
-              "BorrowAPR": 0.052640874221215404
+              "BorrowAPR": 0.08551025639553993
             }
           },
           "rETH": {
             "aavev3": {
-              "BorrowAPR": 0.003377885325972643
+              "BorrowAPR": 0.0034358899231992828
             },
             "radiant": {
-              "DepositAPR": 0.05456970628435483,
+              "DepositAPR": 0.06501408018894661,
+              "LTV": 0.65
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "WETH",
+          "LINK"
+        ],
+        "pairTokenAddress": [
+          "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+          "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4"
+        ],
+        "estimate_apr": 0.09490520559260818,
+        "apr": {
+          "WETH": {
+            "aavev3": {
+              "DepositAPR": 0.014962192933778436,
+              "LTV": 0.8
+            },
+            "radiant": {
+              "BorrowAPR": 0.06859716452018413
+            }
+          },
+          "LINK": {
+            "aavev3": {
+              "BorrowAPR": 0.007346827742781629
+            },
+            "radiant": {
+              "DepositAPR": 0.1608410662647055,
               "LTV": 0.65
             }
           }
@@ -303,23 +1567,239 @@
           "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
           "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8"
         ],
-        "estimate_apr": 0.005496998138758941,
+        "estimate_apr": 0.021372366987666903,
         "apr": {
           "WETH": {
             "aavev3": {
-              "DepositAPR": 0.01712995721073102,
+              "DepositAPR": 0.014962192933778436,
               "LTV": 0.8
             },
             "radiant": {
-              "BorrowAPR": 0.08531545457216719
+              "BorrowAPR": 0.06859716452018413
             }
           },
           "rETH": {
             "aavev3": {
-              "BorrowAPR": 0.003377885325972643
+              "BorrowAPR": 0.0034358899231992828
             },
             "radiant": {
-              "DepositAPR": 0.05456970628435483,
+              "DepositAPR": 0.06501408018894661,
+              "LTV": 0.65
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "USD₮0",
+          "LINK"
+        ],
+        "pairTokenAddress": [
+          "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
+          "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4"
+        ],
+        "estimate_apr": 0.08051112197305133,
+        "apr": {
+          "USD₮0": {
+            "aavev3": {
+              "DepositAPR": 0.0323673192545139,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.10336128216403508
+            }
+          },
+          "LINK": {
+            "aavev3": {
+              "BorrowAPR": 0.007346827742781629
+            },
+            "radiant": {
+              "DepositAPR": 0.1608410662647055,
+              "LTV": 0.65
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "USD₮0",
+          "rETH"
+        ],
+        "pairTokenAddress": [
+          "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
+          "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8"
+        ],
+        "estimate_apr": 0.011573893091923592,
+        "apr": {
+          "USD₮0": {
+            "aavev3": {
+              "DepositAPR": 0.03236692399503631,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.10336128216403508
+            }
+          },
+          "rETH": {
+            "aavev3": {
+              "BorrowAPR": 0.0034358899231992828
+            },
+            "radiant": {
+              "DepositAPR": 0.06501408018894661,
+              "LTV": 0.65
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "wstETH",
+          "LINK"
+        ],
+        "pairTokenAddress": [
+          "0x5979D7b546E38E414F7E9822514be443A4800529",
+          "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4"
+        ],
+        "estimate_apr": 0.07189594935093557,
+        "apr": {
+          "wstETH": {
+            "aavev3": {
+              "DepositAPR": 0.0000040367211026917,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.08867014859906644
+            }
+          },
+          "LINK": {
+            "aavev3": {
+              "BorrowAPR": 0.007346827742781629
+            },
+            "radiant": {
+              "DepositAPR": 0.1608410662647055,
+              "LTV": 0.65
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "wstETH",
+          "rETH"
+        ],
+        "pairTokenAddress": [
+          "0x5979D7b546E38E414F7E9822514be443A4800529",
+          "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8"
+        ],
+        "estimate_apr": 0.0029589131588031625,
+        "apr": {
+          "wstETH": {
+            "aavev3": {
+              "DepositAPR": 0.0000040367211026917,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.08867014859906644
+            }
+          },
+          "rETH": {
+            "aavev3": {
+              "BorrowAPR": 0.0034358899231992828
+            },
+            "radiant": {
+              "DepositAPR": 0.06501408018894661,
+              "LTV": 0.65
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "rETH",
+          "LINK"
+        ],
+        "pairTokenAddress": [
+          "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8",
+          "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4"
+        ],
+        "estimate_apr": 0.034743719505520826,
+        "apr": {
+          "rETH": {
+            "aavev3": {
+              "DepositAPR": 0.00006450774832927537,
+              "LTV": 0.69
+            },
+            "radiant": {
+              "BorrowAPR": 0.1587430028979539
+            }
+          },
+          "LINK": {
+            "aavev3": {
+              "BorrowAPR": 0.007346827742781629
+            },
+            "radiant": {
+              "DepositAPR": 0.1608410662647055,
+              "LTV": 0.65
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "USDC",
+          "LINK"
+        ],
+        "pairTokenAddress": [
+          "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+          "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4"
+        ],
+        "estimate_apr": 0.08684678114069572,
+        "apr": {
+          "USDC": {
+            "aavev3": {
+              "DepositAPR": 0.03710474609425726,
+              "LTV": 0.75
+            },
+            "radiant": {
+              "BorrowAPR": 0.09510248507014893
+            }
+          },
+          "LINK": {
+            "aavev3": {
+              "BorrowAPR": 0.007346827742781629
+            },
+            "radiant": {
+              "DepositAPR": 0.1608410662647055,
               "LTV": 0.65
             }
           }
@@ -339,23 +1819,95 @@
           "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
           "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8"
         ],
-        "estimate_apr": 0.008219270315632198,
+        "estimate_apr": 0.01791308825079956,
         "apr": {
           "USDC": {
             "aavev3": {
-              "DepositAPR": 0.02913550511608848,
+              "DepositAPR": 0.037111604150126494,
               "LTV": 0.75
             },
             "radiant": {
-              "BorrowAPR": 0.09103211107127708
+              "BorrowAPR": 0.09510248507014893
             }
           },
           "rETH": {
             "aavev3": {
-              "BorrowAPR": 0.003377885325972643
+              "BorrowAPR": 0.0034358899231992828
             },
             "radiant": {
-              "DepositAPR": 0.05456970628435483,
+              "DepositAPR": 0.06501408018894661,
+              "LTV": 0.65
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "ARB",
+          "LINK"
+        ],
+        "pairTokenAddress": [
+          "0x912CE59144191C1204E64559FE8253a0e49E6548",
+          "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4"
+        ],
+        "estimate_apr": 0.04969465651469378,
+        "apr": {
+          "ARB": {
+            "aavev3": {
+              "DepositAPR": 0.0026725192100618502,
+              "LTV": 0.58
+            },
+            "radiant": {
+              "BorrowAPR": 0.10700143652577025
+            }
+          },
+          "LINK": {
+            "aavev3": {
+              "BorrowAPR": 0.007346827742781629
+            },
+            "radiant": {
+              "DepositAPR": 0.1608410662647055,
+              "LTV": 0.65
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "aavev3",
+          "radiant"
+        ],
+        "pairToken": [
+          "weETH",
+          "LINK"
+        ],
+        "pairTokenAddress": [
+          "0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe",
+          "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4"
+        ],
+        "estimate_apr": 0.084704302051603,
+        "apr": {
+          "weETH": {
+            "aavev3": {
+              "DepositAPR": 0.00016991634683836087,
+              "LTV": 0.73
+            },
+            "radiant": {
+              "BorrowAPR": 0.057802144101109044
+            }
+          },
+          "LINK": {
+            "aavev3": {
+              "BorrowAPR": 0.007346827742781629
+            },
+            "radiant": {
+              "DepositAPR": 0.1608410662647055,
               "LTV": 0.65
             }
           }
@@ -375,24 +1927,240 @@
           "0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe",
           "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8"
         ],
-        "estimate_apr": 0.008275923409919965,
+        "estimate_apr": 0.01760558682459411,
         "apr": {
           "weETH": {
             "aavev3": {
-              "DepositAPR": 0.0001591909400427708,
-              "LTV": 0.725
+              "DepositAPR": 0.00016991634683836087,
+              "LTV": 0.73
             },
             "radiant": {
-              "BorrowAPR": 0.061354197380163976
+              "BorrowAPR": 0.057802144101109044
             }
           },
           "rETH": {
             "aavev3": {
-              "BorrowAPR": 0.003377885325972643
+              "BorrowAPR": 0.0034358899231992828
             },
             "radiant": {
-              "DepositAPR": 0.05456970628435483,
+              "DepositAPR": 0.06501408018894661,
               "LTV": 0.65
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "radiant",
+          "aavev3"
+        ],
+        "pairToken": [
+          "LINK",
+          "WBTC"
+        ],
+        "pairTokenAddress": [
+          "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4",
+          "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f"
+        ],
+        "estimate_apr": 0.017298522496417376,
+        "apr": {
+          "LINK": {
+            "radiant": {
+              "DepositAPR": 0.1608410662647055,
+              "LTV": 0.65
+            },
+            "aavev3": {
+              "BorrowAPR": 0.007346827742781629
+            }
+          },
+          "WBTC": {
+            "radiant": {
+              "BorrowAPR": 0.08551025639553993
+            },
+            "aavev3": {
+              "DepositAPR": 0.00007257380748529853,
+              "LTV": 0.73
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "radiant",
+          "aavev3"
+        ],
+        "pairToken": [
+          "LINK",
+          "WETH"
+        ],
+        "pairTokenAddress": [
+          "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4",
+          "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
+        ],
+        "estimate_apr": 0.044950695144652456,
+        "apr": {
+          "LINK": {
+            "radiant": {
+              "DepositAPR": 0.1608410662647055,
+              "LTV": 0.65
+            },
+            "aavev3": {
+              "BorrowAPR": 0.007346827742781629
+            }
+          },
+          "WETH": {
+            "radiant": {
+              "BorrowAPR": 0.06859716452018413
+            },
+            "aavev3": {
+              "DepositAPR": 0.014956689309802642,
+              "LTV": 0.8
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "radiant",
+          "aavev3"
+        ],
+        "pairToken": [
+          "LINK",
+          "USDC"
+        ],
+        "pairTokenAddress": [
+          "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4",
+          "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+        ],
+        "estimate_apr": 0.037137548374076595,
+        "apr": {
+          "LINK": {
+            "radiant": {
+              "DepositAPR": 0.1608410662647055,
+              "LTV": 0.65
+            },
+            "aavev3": {
+              "BorrowAPR": 0.007346827742781629
+            }
+          },
+          "USDC": {
+            "radiant": {
+              "BorrowAPR": 0.09510248507014893
+            },
+            "aavev3": {
+              "DepositAPR": 0.03711649598497771,
+              "LTV": 0.75
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "radiant",
+          "aavev3"
+        ],
+        "pairToken": [
+          "LINK",
+          "USD₮0"
+        ],
+        "pairTokenAddress": [
+          "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4",
+          "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
+        ],
+        "estimate_apr": 0.028628399241988456,
+        "apr": {
+          "LINK": {
+            "radiant": {
+              "DepositAPR": 0.1608410662647055,
+              "LTV": 0.65
+            },
+            "aavev3": {
+              "BorrowAPR": 0.007346827742781629
+            }
+          },
+          "USD₮0": {
+            "radiant": {
+              "BorrowAPR": 0.10336128216403508
+            },
+            "aavev3": {
+              "DepositAPR": 0.032284294414112874,
+              "LTV": 0.75
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "radiant",
+          "aavev3"
+        ],
+        "pairToken": [
+          "LINK",
+          "wstETH"
+        ],
+        "pairTokenAddress": [
+          "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4",
+          "0x5979D7b546E38E414F7E9822514be443A4800529"
+        ],
+        "estimate_apr": 0.017195468529192307,
+        "apr": {
+          "LINK": {
+            "radiant": {
+              "DepositAPR": 0.1608410662647055,
+              "LTV": 0.65
+            },
+            "aavev3": {
+              "BorrowAPR": 0.007346827742781629
+            }
+          },
+          "wstETH": {
+            "radiant": {
+              "BorrowAPR": 0.08867014859906644
+            },
+            "aavev3": {
+              "DepositAPR": 0.00000403667561168216,
+              "LTV": 0.75
+            }
+          }
+        }
+      },
+      {
+        "chain": "ARBITRUM",
+        "pairProtocol": [
+          "radiant",
+          "aavev3"
+        ],
+        "pairToken": [
+          "LINK",
+          "weETH"
+        ],
+        "pairTokenAddress": [
+          "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4",
+          "0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe"
+        ],
+        "estimate_apr": 0.035372068138376934,
+        "apr": {
+          "LINK": {
+            "radiant": {
+              "DepositAPR": 0.1608410662647055,
+              "LTV": 0.65
+            },
+            "aavev3": {
+              "BorrowAPR": 0.007346827742781629
+            }
+          },
+          "weETH": {
+            "radiant": {
+              "BorrowAPR": 0.057802144101109044
+            },
+            "aavev3": {
+              "DepositAPR": 0.00016991634683836087,
+              "LTV": 0.73
             }
           }
         }

@@ -7,8 +7,8 @@ import { Token } from "./src/silo/siloV1";
 const main = async () => {
     console.log(RPC['ETHEREUM']);
     console.log(chain_to_rpc['0x1']);
-    // let token = new Token('ETHEREUM');
-    // console.log(await token.getSymbol('0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9'))
+    let token = new Token('ETHEREUM');
+    console.log(await token.getSymbol('0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2'))
     // let tokenVenus = new Venus('0xf508fCD89b8bd15579dc79A6827cB4686A3592c8', 'BNB');
     // console.log(await tokenVenus.getBorrowAPR());
     // console.log(await tokenVenus.getSupplyAPR());
@@ -49,3 +49,5 @@ const main = async () => {
     // console.log(chain_to_rpc['0x38']);
 }
 main();
+
+// s --> 
